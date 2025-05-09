@@ -53,6 +53,4 @@ if __name__ == "__main__":
     application.run_webhook(
         listen="0.0.0.0",
         port=int(os.environ.get("PORT", 5000)),
-        webhook_url=f"https://{os.environ.get('RENDER_URL')}/{BOT_TOKEN}"
-)
-  
+        webhook_url="https://your-service-name.onrender.com"
